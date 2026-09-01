@@ -1,0 +1,202 @@
+:root {
+  --ink: #142B24;
+  --paper: #EDEAE0;
+  --paper-alt: #E2DFD3;
+  --accent: #7A5C3E;
+  --accent-2: #3F6B52;
+  --rule: #C9C3B2;
+  --muted: #6B6A5F;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 28px 100px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 22px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-top: 10px;
+}
+
+.contact {
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.contact a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Summary */
+.summary {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  max-width: 60ch;
+  margin: 28px 0 48px;
+  color: #2B4038;
+}
+
+/* Section labels */
+.section { margin-top: 46px; }
+
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-2);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* Experience entries */
+.entry {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.entry:first-of-type { border-top: none; }
+
+.entry-dates {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding-top: 3px;
+}
+
+.entry-title {
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+.entry-org {
+  color: var(--accent-2);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.entry ul {
+  padding-left: 18px;
+  color: #333226;
+  font-size: 0.94rem;
+}
+.entry li { margin-bottom: 5px; }
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 7px 13px;
+  border-radius: 3px;
+  color: #2B4038;
+}
+
+/* Education */
+.edu-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.edu-entry:first-of-type { border-top: none; }
+.edu-school { font-weight: 600; }
+.edu-detail { color: var(--muted); font-size: 0.88rem; }
+.edu-dates {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media print {
+  body { background: white; }
+  .wrap { padding: 20px; max-width: 100%; }
+}
+
+@media (max-width: 560px) {
+  .contact { text-align: left; }
+  header { flex-direction: column; align-items: flex-start; }
+  .entry { grid-template-columns: 1fr; gap: 4px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { animation: fadeIn 0.6s ease-out both; }
+  .fade-in:nth-child(1) { animation-delay: 0.02s; }
+  .fade-in:nth-child(2) { animation-delay: 0.08s; }
+  .fade-in:nth-child(3) { animation-delay: 0.14s; }
+  .fade-in:nth-child(4) { animation-delay: 0.20s; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

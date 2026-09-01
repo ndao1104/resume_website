@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Résumé</title> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="fade-in">
+            <div>
+                <div class="name">Nam Dao</div>
+                <div class="role"></div>
+            </div>
+            <div class="contact">
+                ndao298.bkb@gmail<br>
+                <a href="https://www.linkedin.com/in/ndao1104/" target="_blank"
+                    rel="noopener noreferrer">linkedin</a><br>
+                <a href="https://github.com/ndao1104" target="_blank" rel="noopener noreferrer">github</a><br>
+                Toronto, Ontario
+            </div>
+        </header>
+
+        <p class="summary fade-in">
+            asdasdasdasdas
+        </p>
+
+        <section class="section fade-in">
+            <div class="section-label">Experience</div>
+
+            <div class="entry">
+                <div class="entry-dates">2025 — Now</div>
+                <div>
+                    <div class="entry-title">Security Operations Engineer</div>
+                    <div class="entry-org">Canada Life</div>
+                    <ul>
+                        <li>Provided technical support within the infrastructure and operation team, with a primary
+                            focus on enterprise security operations.</li>
+                        <li>Standardized log schemas, evaluating baseline volume and data quality prior to onboarding to
+                            prevent SIEM capacity overages. </li>
+                        <li>Prepared and executed change requests for log onboarding, collaborating with
+                            cross-functional teams (application, infrastructure, change management) on multi-tier
+                            environment validation to ensure smooth production deployments.</li>
+                        <li>Validated post-ingestion parsed log fields with the security team and documented the custom
+                            SPL/MQL detection queries.</li>
+                        <li>Monitored NXLog agent health across 2000+ servers via SIEM dashboards, coordinating with the
+                            infrastructure team to resolve collector outages and prevent telemetry gaps.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-dates">2024 — 2025</div>
+                <div>
+                    <div class="entry-title">Site Reliability Engineer</div>
+                    <div class="entry-org">Morgan Stanley</div>
+                    <ul>
+                        <li>Provided 24/7 production support for mainframe and distributed trading applications,
+                            resolving incidents, performance bottlenecks, and data discrepancies across millions of
+                            daily financial transactions. </li>
+                        <li>Diagnosed Linux production incidents by monitoring Grafana trade queues, analyzing Splunk
+                            logs, and debugging Java (Spring) microservices to coordinate rapid cross-functional
+                            resolution with development, infrastructure, and business teams.</li>
+                        <li>Onboarded logs into Splunk and built real-time dashboards to track system performance and
+                            trade execution failures. Implemented 50+ automated alerts for proactive monitoring,
+                            reducing troubleshooting time from 30 minutes to 5 minutes.</li>
+                        <li>Built automated data-remediation utilities using Python and SQL to detect and correct data
+                            anomalies in Sybase/DB2, reducing manual intervention by 75%.</li>
+                        <li>Developed and executed ad-hoc SQL queries to resolve trade data discrepancies, enhancing
+                            data integrity and compliance with regulatory standards across production systems.</li>
+                        <li>Managed AutoSys batch jobs in production pipelines, archiving 100M+ trade records weekly and
+                            ensuring availability for downstream analytics and compliance.</li>
+                        <li>Automated infrastructure configuration with Ansible and implemented CI/CD pipelines in
+                            GitLab for microservice deployments, reducing environment setup time and improving release
+                            frequency.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="section-label">Skills</div>
+            <div class="skills-grid">
+                <span class="skill">python</span>
+                <span class="skill">splunk</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Education</div>
+            <div class="edu-entry">
+                <div>
+                    <div class="edu-school">University of Ottawa</div>
+                    <div class="edu-detail">Honours BSc, Electrical Engineering</div>
+                </div>
+                <div class="edu-dates">2017 — 2018</div>
+
+                <div>
+                    <div class="edu-school">University of Ottawa</div>
+                    <div class="edu-detail">Honours BSc, Computer Science</div>
+                </div>
+                <div class="edu-dates">2018 — 2022</div>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <div class="section-label">Publication</div>
+            <div class="edu-entry">
+                <div>
+                    <div class="edu-school">DistSMOGN: Distributed SMOGN for Imbalanced Regression Problems | <a
+                            href="https://proceedings.mlr.press/v183/song22a.html" target="_blank"
+                            rel="noopener noreferrer">Link</a> | <a
+                            href="https://proceedings.mlr.press/v183/song22a/song22a.pdf" target="_blank"
+                            rel="noopener noreferrer">PDF</a>
+                    </div>
+                    <a class="edu-detail">Honours BSc, Electrical Engineering</a>
+                </div>
+
+            </div>
+
+            <div>Imbalanced domains pose important challenges to learning systems and multiple resampling solutions have
+                been put forward in the past two decades. More recently, it became clear that the imbalance problem
+                arises in several other tasks including regression. Although several resampling solutions were proposed
+                to tackle the imbalanced regression problem, with the emergence of big data this problem has become more
+                difficult as these solutions become unfeasible due to the large volumes of data. In this paper, we
+                propose the first distributed resampling solution for imbalanced regression that is applicable to large
+                amounts of data. Our algorithm, DistSMOGN, is a resampling solution based on SMOGN that addresses
+                simultaneously the imbalanced regression problem and the challenge of dealing with high volumes of data.
+                We apply Scalable KMeans++ as way to obtain coherent cluster that maintain the spatial relationships
+                between the rare cases. Then, we apply the well-known SMOGN method in each cluster to obtain the new
+                synthetic examples. This method allows to generate high quality synthetic examples while dealing with
+                the large volumes of data. Our solution is based on the MapReduce paradigm and we propose an efficient
+                implementation on Apache Spark. The experimental evaluation carried out shows the advantages of
+                DistSMOGN. All the code implementing DistSMOGN is freely available and can be downloaded at
+                https://github.com/ndao1104/distributed-resampling. </div>
+
+        </section>
+
+        <footer>Last updated August 2026</footer>
+
+    </div>
+</body>
+
+</html>
