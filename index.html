@@ -3,10 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Résumé</title> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,7 +24,7 @@
         </header>
 
         <p class="summary fade-in">
-            asdasdasdasdas
+            <!-- summary here maybe? -->
         </p>
 
         <section class="section fade-in">
@@ -56,7 +52,7 @@
             </div>
 
             <div class="entry">
-                <div class="entry-dates">2024 — 2025</div>
+                <div class="entry-dates">2023 — 2025</div>
                 <div>
                     <div class="entry-title">Site Reliability Engineer</div>
                     <div class="entry-org">Morgan Stanley</div>
@@ -84,11 +80,132 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="section-label">Publication</div>
+            <div class="edu-entry">
+                <div>
+                    <div class="edu-school">DistSMOGN: Distributed SMOGN for Imbalanced Regression Problems |
+                    </div>
+                </div>
+
+            </div>
+            <div class="entry">
+                <div class="entry-dates">2024 — 2025</div>
+                <div>
+                    <div class="entry-title">DistSMOGN: Distributed SMOGN for Imbalanced Regression Problems</div>
+                    <div class="entry-org"><a href="https://proceedings.mlr.press/v183/song22a.html" target="_blank"
+                            rel="noopener noreferrer">Link</a> | <a
+                            href="https://proceedings.mlr.press/v183/song22a/song22a.pdf" target="_blank"
+                            rel="noopener noreferrer">PDF</a> | <a
+                            href="https://github.com/ndao1104/distributed-resampling" target="_blank"
+                            rel="noopener noreferrer">Github</a>
+                    </div>
+                    <ul>
+                        <li>Imbalanced data poses challenges for learning systems, including regression tasks. Existing
+                            resampling
+                            methods for imbalanced regression often become impractical with large datasets.</li>
+                        <li>We propose
+                            DistSMOGN, the first distributed resampling solution designed for large-scale imbalanced
+                            regression.</li>
+                        <li>DistSMOGN uses Scalable KMeans++ to preserve the spatial relationships of rare cases,
+                            followed by SMOGN
+                            within each cluster to generate high-quality synthetic samples. Implemented using MapReduce
+                            and Apache
+                            Spark, our experiments demonstrate its effectiveness and scalability.</li>
+                        <li>The source code is freely available on GitHub.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="section fade-in">
+            <div class="section-label">Projects</div>
+
+            <div class="entry">
+                <div class="entry-dates">2026 — Now</div>
+                <div>
+                    <div class="entry-title">Personal website
+                        | <a href="https://ndao1104.pythonanywhere.com/" target="_blank"
+                            rel="noopener noreferrer">Link</a>
+                    </div>
+                    <div class="entry-org">Canada Life</div>
+                    <ul>
+                        <li>https://resume.daonam.workers.dev/</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-dates">2026 - Now</div>
+                <div>
+                    <div class="entry-title">Path Of Exile cards flipping economy check
+                        | <a href="https://ndao1104.pythonanywhere.com/" target="_blank"
+                            rel="noopener noreferrer">Link</a></div>
+                    <div class="entry-org">Full-stack Flask/JavaScript web app that pulls live game economy data via
+                        API, with a backend proxy layer, dynamic interactive UI, and production deployment.</div>
+                    <ul>
+                        <li>Built a full-stack web app in Flask and vanilla JavaScript that fetches live game economy
+                            data from a third-party public API (poe.ninja) and calculates real-time currency conversions
+                            and item flip profitability</li>
+                        <li>Designed a backend proxy layer to securely route API requests server-side, solving
+                            cross-origin (CORS) restrictions and keeping the client-side code simple</li>
+                        <li>Implemented dynamic, interactive UI components in JavaScript — including a live-updating
+                            data table with user-editable inputs that recalculate results on the fly, without a page
+                            reload</li>
+                        <li>Deployed the application to a live production environment (PythonAnywhere) using Git for
+                            version control, including managing dependency installation and virtual environments in a
+                            remote server context</li>
+                        <li>https://ndao1104.pythonanywhere.com/</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-dates">2026 — Now</div>
+                <div>
+                    <div class="entry-title">Flask_doc2pdf
+                        | <a href="https://ndao1104.pythonanywhere.com/" target="_blank"
+                            rel="noopener noreferrer">Link</a>
+                    </div>
+                    <div class="entry-org">Canada Life</div>
+                    <ul>
+                        <li>https://resume.daonam.workers.dev/</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
         <section class="section fade-in">
             <div class="section-label">Skills</div>
             <div class="skills-grid">
-                <span class="skill">python</span>
-                <span class="skill">splunk</span>
+                <span class="skill">GitLab CI/CD</span>
+                <span class="skill">Kubernetes</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Linux</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Python</span>
+                <span class="skill">PowerShell</span>
+                <span class="skill">NXLog</span>
+                <span class="skill">Grafana</span>
+                <span class="skill">Bash</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">Sybase</span>
+                <span class="skill">DB2</span>
+                <span class="skill">AutoSys</span>
+                <span class="skill">ServiceNow</span>
+                <span class="skill">Git</span>
+                <span class="skill">Jira</span>
+                <span class="skill">Confluence</span>
+                <span class="skill">Splunk (SPL)</span>
+                <span class="skill">Trellix Helix (TQL/MQL)</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Azure</span>
+                <span class="skill">Mainframe</span>
+                <span class="skill">Terraform</span>
+                <span class="skill">Ansible</span>
             </div>
         </section>
 
@@ -110,76 +227,8 @@
 
         </section>
 
-        <section class="section">
-            <div class="section-label">Publication</div>
-            <div class="edu-entry">
-                <div>
-                    <div class="edu-school">DistSMOGN: Distributed SMOGN for Imbalanced Regression Problems | <a
-                            href="https://proceedings.mlr.press/v183/song22a.html" target="_blank"
-                            rel="noopener noreferrer">Link</a> | <a
-                            href="https://proceedings.mlr.press/v183/song22a/song22a.pdf" target="_blank"
-                            rel="noopener noreferrer">PDF</a>
-                    </div>
-                    <a class="edu-detail">Honours BSc, Electrical Engineering</a>
-                </div>
 
-            </div>
-
-            <div>Imbalanced domains pose important challenges to learning systems and multiple resampling solutions have
-                been put forward in the past two decades. More recently, it became clear that the imbalance problem
-                arises in several other tasks including regression. Although several resampling solutions were proposed
-                to tackle the imbalanced regression problem, with the emergence of big data this problem has become more
-                difficult as these solutions become unfeasible due to the large volumes of data. In this paper, we
-                propose the first distributed resampling solution for imbalanced regression that is applicable to large
-                amounts of data. Our algorithm, DistSMOGN, is a resampling solution based on SMOGN that addresses
-                simultaneously the imbalanced regression problem and the challenge of dealing with high volumes of data.
-                We apply Scalable KMeans++ as way to obtain coherent cluster that maintain the spatial relationships
-                between the rare cases. Then, we apply the well-known SMOGN method in each cluster to obtain the new
-                synthetic examples. This method allows to generate high quality synthetic examples while dealing with
-                the large volumes of data. Our solution is based on the MapReduce paradigm and we propose an efficient
-                implementation on Apache Spark. The experimental evaluation carried out shows the advantages of
-                DistSMOGN. All the code implementing DistSMOGN is freely available and can be downloaded at
-                https://github.com/ndao1104/distributed-resampling. </div>
-
-        </section>
-        <section class="section fade-in">
-            <div class="section-label">Projects</div>
-
-            <div class="entry">
-                <div class="entry-dates">2026 — Sept</div>
-                <div>
-                    <div class="entry-title">Personal website</div>
-                    <div class="entry-org">Canada Life</div>
-                    <ul>
-                        <li>https://resume.daonam.workers.dev/</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-dates">2024 — 2025</div>
-                <div>
-                    <div class="entry-title">Card Value Check</div>
-                    <div class="entry-org">Full-stack Flask/JavaScript web app that pulls live game economy data via API, with a backend proxy layer, dynamic interactive UI, and production deployment.</div>
-                    <ul>
-                        <li>https://ndao1104.pythonanywhere.com/</li>
-                        <li>Built a full-stack web app in Flask and vanilla JavaScript that fetches live game economy
-                            data from a third-party public API (poe.ninja) and calculates real-time currency conversions
-                            and item flip profitability</li>
-                        <li>Designed a backend proxy layer to securely route API requests server-side, solving
-                            cross-origin (CORS) restrictions and keeping the client-side code simple</li>
-                        <li>Implemented dynamic, interactive UI components in JavaScript — including a live-updating
-                            data table with user-editable inputs that recalculate results on the fly, without a page
-                            reload</li>
-                        <li>Deployed the application to a live production environment (PythonAnywhere) using Git for
-                            version control, including managing dependency installation and virtual environments in a
-                            remote server context</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <footer>Last updated August 2026</footer>
-
     </div>
 </body>
 
