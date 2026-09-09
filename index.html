@@ -119,6 +119,33 @@
             <div class="entry">
                 <div class="entry-dates">2026 — Now</div>
                 <div>
+                    <div class="entry-title">Self-Hosted Home Server & Password Manager Infrastructure</div>
+                    <div class="entry-org">Designed and deployed a headless Linux server (repurposed laptop) running
+                        containerized services accessible securely from anywhere via a private mesh VPN. Configured
+                        Docker-based multi-service architecture with automated HTTPS, network-wide ad-blocking DNS, and
+                        automated backup routines.</div>
+                    <ul>
+                        <li>Deployed and configured a headless Ubuntu Linux server, converting a laptop into an
+                            always-on host.</li>
+                        <li>Containerized and orchestrated multiple self-hosted applications (Vaultwarden password
+                            manager, AdGuard Home DNS filter) using Docker and Docker Compose, managing inter-container
+                            networking and persistent data volumes.</li>
+                        <li>Implemented Caddy as a reverse proxy to route and secure multiple containerized services
+                            under a single domain with automatic HTTPS.</li>
+                        <li>Configured Tailscale (WireGuard-based mesh VPN) for secure remote access to self-hosted
+                            services without exposing ports to the public internet, including custom TLS certificate
+                            management for internal domains.</li>
+                        <li>Automated encrypted backup routines using Bash scripting and cron scheduling, implementing
+                            retention policies to manage storage.</li>
+                        <li>Established static IP addressing and DHCP reservation for reliable server accessibility on
+                            local network.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-dates">2026 — Now</div>
+                <div>
                     <div class="entry-title">Path of Exile Card Flipping Economy Check
                         | <a href="https://ndao1104.pythonanywhere.com/" target="_blank"
                             rel="noopener noreferrer">Link</a></div>
@@ -200,14 +227,20 @@
             <div class="skills-grid">
                 <span class="skill">GitLab CI/CD</span>
                 <span class="skill">Kubernetes</span>
-                <span class="skill">Docker</span>
+                <span class="skill">Docker & Docker Compose</span>
                 <span class="skill">Linux</span>
+                <span class="skill">Linux Administration</span>
                 <span class="skill">SQL</span>
                 <span class="skill">Python</span>
                 <span class="skill">PowerShell</span>
+                <span class="skill">Ansible</span>
                 <span class="skill">NXLog</span>
                 <span class="skill">Grafana</span>
-                <span class="skill">Bash</span>
+                <span class="skill">Reverse Proxy Configuration (Caddy)</span>
+                <span class="skill">VPN Setup (Tailscale/WireGuard)</span>
+                <span class="skill">DNS & DHCP Configuration</span>
+                <span class="skill">Bash Scripting</span>
+                <span class="skill">Cron Automation</span>
                 <span class="skill">REST APIs</span>
                 <span class="skill">Sybase</span>
                 <span class="skill">DB2</span>
@@ -222,7 +255,7 @@
                 <span class="skill">Azure</span>
                 <span class="skill">Mainframe</span>
                 <span class="skill">Terraform</span>
-                <span class="skill">Ansible</span>
+
             </div>
         </section>
 
