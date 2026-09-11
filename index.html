@@ -3,282 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nam Dao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="wrap">
+<body class="home">
+    <div class="home-wrap">
 
-        <header class="fade-in">
-            <div>
-                <div class="name">Nam Dao</div>
-                <div class="role"></div>
-            </div>
-            <div class="contact">
-                ndao298.bkb@gmail.com<br>
-                <a href="https://www.linkedin.com/in/ndao1104/" target="_blank"
-                    rel="noopener noreferrer">Linkedin</a><br>
-                <a href="https://github.com/ndao1104" target="_blank" rel="noopener noreferrer">Github</a><br>
-                Toronto, Ontario
-            </div>
-        </header>
+        <div class="home-name fade-in">Nam Dao</div>
+        <p class="home-tagline fade-in">Infrastructure &amp; security engineer.</p>
 
-        <p class="summary fade-in">
-            <!-- summary here maybe? -->
-        </p>
+        <nav class="home-links fade-in">
+            <a class="home-link" href="resume.html">
+                <span class="home-link-label">Résumé</span>
+                <span class="home-link-note">Experience, projects, skills</span>
+            </a>
+            <a class="home-link" href="https://www.linkedin.com/in/ndao1104/" target="_blank" rel="noopener noreferrer">
+                <span class="home-link-label">LinkedIn</span>
+                <span class="home-link-note">Work history &amp; connections</span>
+            </a>
+            <a class="home-link" href="https://github.com/ndao1104" target="_blank" rel="noopener noreferrer">
+                <span class="home-link-label">GitHub</span>
+                <span class="home-link-note">Code &amp; projects</span>
+            </a>
+            <a class="home-link" href="mailto:ndao298.bkb@gmail.com">
+                <span class="home-link-label">Email</span>
+                <span class="home-link-note">ndao298.bkb@gmail.com</span>
+            </a>
+        </nav>
 
-        <section class="section fade-in">
-            <div class="section-label">Experience</div>
-
-            <div class="entry">
-                <div class="entry-dates">2025 — Now</div>
-                <div>
-                    <div class="entry-title">Security Operations Engineer</div>
-                    <div class="entry-org">Canada Life</div>
-                    <ul>
-                        <li>Provided technical support within the infrastructure and operation team, with a primary
-                            focus on enterprise security operations.</li>
-                        <li>Standardized log schemas, evaluating baseline volume and data quality prior to onboarding to
-                            prevent SIEM capacity overages. </li>
-                        <li>Prepared and executed change requests for log onboarding, collaborating with
-                            cross-functional teams (application, infrastructure, change management) on multi-tier
-                            environment validation to ensure smooth production deployments.</li>
-                        <li>Validated post-ingestion parsed log fields with the security team and documented the custom
-                            SPL/MQL detection queries.</li>
-                        <li>Monitored NXLog agent health across 2000+ servers via SIEM dashboards, coordinating with the
-                            infrastructure team to resolve collector outages and prevent telemetry gaps.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-dates">2023 — 2025</div>
-                <div>
-                    <div class="entry-title">Site Reliability Engineer</div>
-                    <div class="entry-org">Morgan Stanley</div>
-                    <ul>
-                        <li>Provided 24/7 production support for mainframe and distributed trading applications,
-                            resolving incidents, performance bottlenecks, and data discrepancies across millions of
-                            daily financial transactions. </li>
-                        <li>Diagnosed Linux production incidents by monitoring Grafana trade queues, analyzing Splunk
-                            logs, and debugging Java (Spring) microservices to coordinate rapid cross-functional
-                            resolution with development, infrastructure, and business teams.</li>
-                        <li>Onboarded logs into Splunk and built real-time dashboards to track system performance and
-                            trade execution failures. Implemented 50+ automated alerts for proactive monitoring,
-                            reducing troubleshooting time from 30 minutes to 5 minutes.</li>
-                        <li>Built automated data-remediation utilities using Python and SQL to detect and correct data
-                            anomalies in Sybase/DB2, reducing manual intervention by 75%.</li>
-                        <li>Developed and executed ad-hoc SQL queries to resolve trade data discrepancies, enhancing
-                            data integrity and compliance with regulatory standards across production systems.</li>
-                        <li>Managed AutoSys batch jobs in production pipelines, archiving 100M+ trade records weekly and
-                            ensuring availability for downstream analytics and compliance.</li>
-                        <li>Automated infrastructure configuration with Ansible and implemented CI/CD pipelines in
-                            GitLab for microservice deployments, reducing environment setup time and improving release
-                            frequency.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-label">Publication</div>
-            <div class="entry">
-                <div class="entry-dates">2024 — 2025</div>
-                <div>
-                    <div class="entry-title">DistSMOGN: Distributed SMOGN for Imbalanced Regression Problems</div>
-                    <div class="entry-org"><a href="https://proceedings.mlr.press/v183/song22a.html" target="_blank"
-                            rel="noopener noreferrer">Link</a> | <a
-                            href="https://proceedings.mlr.press/v183/song22a/song22a.pdf" target="_blank"
-                            rel="noopener noreferrer">PDF</a> | <a
-                            href="https://github.com/ndao1104/distributed-resampling" target="_blank"
-                            rel="noopener noreferrer">Github</a>
-                    </div>
-                    <ul>
-                        <li>Imbalanced data poses challenges for learning systems, including regression tasks. Existing
-                            resampling
-                            methods for imbalanced regression often become impractical with large datasets.</li>
-                        <li>We propose
-                            DistSMOGN, the first distributed resampling solution designed for large-scale imbalanced
-                            regression.</li>
-                        <li>DistSMOGN uses Scalable K-Means++ to preserve the spatial relationships of rare cases,
-                            followed by SMOGN
-                            within each cluster to generate high-quality synthetic samples. Implemented using MapReduce
-                            and Apache
-                            Spark, our experiments demonstrate its effectiveness and scalability.</li>
-                        <li>The source code is freely available on GitHub.</li>
-
-                    </ul>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="section fade-in">
-            <div class="section-label">Projects</div>
-
-            <div class="entry">
-                <div class="entry-dates">2026 — Now</div>
-                <div>
-                    <div class="entry-title">Self-Hosted Home Server & Password Manager Infrastructure</div>
-                    <div class="entry-org">Designed and deployed a headless Linux server (repurposed laptop) running
-                        containerized services accessible securely from anywhere via a private mesh VPN. Configured
-                        Docker-based multi-service architecture with automated HTTPS, network-wide ad-blocking DNS, and
-                        automated backup routines.</div>
-                    <ul>
-                        <li>Deployed and configured a headless Ubuntu Linux server, converting a laptop into an
-                            always-on host.</li>
-                        <li>Containerized and orchestrated multiple self-hosted applications (Vaultwarden password
-                            manager, AdGuard Home DNS filter) using Docker and Docker Compose, managing inter-container
-                            networking and persistent data volumes.</li>
-                        <li>Implemented Caddy as a reverse proxy to route and secure multiple containerized services
-                            under a single domain with automatic HTTPS.</li>
-                        <li>Configured Tailscale (WireGuard-based mesh VPN) for secure remote access to self-hosted
-                            services without exposing ports to the public internet, including custom TLS certificate
-                            management for internal domains.</li>
-                        <li>Automated encrypted backup routines using Bash scripting and cron scheduling, implementing
-                            retention policies to manage storage.</li>
-                        <li>Established static IP addressing and DHCP reservation for reliable server accessibility on
-                            local network.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-dates">2026 — Now</div>
-                <div>
-                    <div class="entry-title">Path of Exile Card Flipping Economy Check
-                        | <a href="https://ndao1104.pythonanywhere.com/" target="_blank"
-                            rel="noopener noreferrer">Link</a></div>
-                    <div class="entry-org">Full-stack Flask/JavaScript web app that pulls live game economy data via
-                        API, with a backend proxy layer, dynamic interactive UI, and production deployment.</div>
-                    <ul>
-                        <li>Built a full-stack web app in Flask and vanilla JavaScript that fetches live game
-                            economy
-                            data from a third-party public API (poe.ninja) and calculates real-time currency
-                            conversions
-                            and item flip profitability.</li>
-                        <li>Designed a backend proxy layer to securely route API requests server-side, solving
-                            cross-origin (CORS) restrictions and keeping the client-side code simple.</li>
-                        <li>Implemented dynamic, interactive UI components in JavaScript — including a live-updating
-                            data table with user-editable inputs that recalculate results on the fly, without a page
-                            reload.</li>
-                        <li>Deployed the application to a live production environment (PythonAnywhere) using Git for
-                            version control, including managing dependency installation and virtual environments in
-                            a remote server context.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-dates">2026 — Now</div>
-                <div>
-                    <div class="entry-title">Flask doc2pdf
-                        | <a href="https://flask-doc2pdf.onrender.com/" target="_blank"
-                            rel="noopener noreferrer">Link</a>
-                    </div>
-                    <div class="entry-org">Built and deployed a Flask-based DOCX-to-PDF converter with a
-                        drag-and-drop
-                        UI, using LibreOffice for conversion, Docker for containerization, and Render for CI/CD
-                        deployment from GitHub.</div>
-                    <ul>
-                        <li>Built a Flask backend that handles file uploads and converts DOCX files to PDF using
-                            LibreOffice in headless mode via subprocess calls.</li>
-                        <li>Developed a vanilla JavaScript drag-and-drop frontend using the Fetch API and FormData,
-                            supporting sequential multi-file uploads with per-file status feedback.</li>
-                        <li>Containerized the application with Docker, including system-level dependency
-                            installation
-                            (LibreOffice) alongside Python packages.</li>
-                        <li>Deployed to Render with GitHub-based CI/CD, enabling automatic rebuilds and deploys on
-                            every
-                            push to main.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-dates">2026 — Now</div>
-                <div>
-                    <div class="entry-title">Personal Website
-                        | <a href="https://resume.daonam.workers.dev/" target="_blank"
-                            rel="noopener noreferrer">Link</a>
-                    </div>
-                    <div class="entry-org">Deployed and maintained a static website using Cloudflare Pages,
-                        migrating
-                        from manual uploads to an automated Git-based CI/CD workflow for continuous deployment.
-                    </div>
-                    <ul>
-                        <li>Designed and built a responsive personal portfolio/resume site from scratch.</li>
-                        <li>Migrated hosting from manual file uploads to a Git-based deployment pipeline, enabling
-                            automatic redeploys on every push.</li>
-                        <li>Configured custom domain routing and HTTPS through Cloudflare's edge network.</li>
-                        <li>Maintained the site as a living document, iterating on layout and content as new
-                            projects
-                            were added.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        </section>
-
-        <section class="section fade-in">
-            <div class="section-label">Skills</div>
-            <div class="skills-grid">
-                <span class="skill">GitLab CI/CD</span>
-                <span class="skill">Kubernetes</span>
-                <span class="skill">Docker & Docker Compose</span>
-                <span class="skill">Linux</span>
-                <span class="skill">Linux Administration</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Python</span>
-                <span class="skill">PowerShell</span>
-                <span class="skill">Ansible</span>
-                <span class="skill">NXLog</span>
-                <span class="skill">Grafana</span>
-                <span class="skill">Reverse Proxy Configuration (Caddy)</span>
-                <span class="skill">VPN Setup (Tailscale/WireGuard)</span>
-                <span class="skill">DNS & DHCP Configuration</span>
-                <span class="skill">Bash Scripting</span>
-                <span class="skill">Cron Automation</span>
-                <span class="skill">REST APIs</span>
-                <span class="skill">Sybase</span>
-                <span class="skill">DB2</span>
-                <span class="skill">AutoSys</span>
-                <span class="skill">ServiceNow</span>
-                <span class="skill">Git</span>
-                <span class="skill">Jira</span>
-                <span class="skill">Confluence</span>
-                <span class="skill">Splunk (SPL)</span>
-                <span class="skill">Trellix Helix (TQL/MQL)</span>
-                <span class="skill">AWS</span>
-                <span class="skill">Azure</span>
-                <span class="skill">Mainframe</span>
-                <span class="skill">Terraform</span>
-
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-label">Education</div>
-            <div class="edu-entry">
-                <div>
-                    <div class="edu-school">University of Ottawa</div>
-                    <div class="edu-detail">Honours BSc, Electrical Engineering</div>
-                </div>
-                <div class="edu-dates">2017 — 2018</div>
-
-                <div>
-                    <div class="edu-school">University of Ottawa</div>
-                    <div class="edu-detail">Honours BSc, Computer Science</div>
-                </div>
-                <div class="edu-dates">2018 — 2022</div>
-            </div>
-
-        </section>
-
-
-        <footer>Last updated August 2026</footer>
+        <footer class="home-footer">Toronto, Ontario</footer>
     </div>
 </body>
 
