@@ -36,6 +36,19 @@ header {
   flex-wrap: wrap;
 }
 
+.name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.name-link:hover .name {
+  color: var(--accent-2);
+}
+
+.name-link:hover .home-name {
+  color: var(--accent-2);
+}
+
 .name {
   font-family: 'Fraunces', serif;
   font-weight: 700;
@@ -170,7 +183,7 @@ header {
 footer {
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px solid var(--rule);
+  /* border-top: 1px solid var(--rule); */
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.72rem;
   color: var(--muted);
@@ -256,6 +269,7 @@ body.home {
 @media print {
   body { background: white; }
   .wrap { padding: 20px; max-width: 100%; }
+  .floating-download { display: none; }
 }
 
 @media (max-width: 560px) {
@@ -273,5 +287,55 @@ body.home {
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(6px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+
+/* Download button */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 10px 18px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-download:hover {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+.btn-download::before {
+  content: "↓";
+  font-size: 0.9rem;
+}
+
+.floating-download {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 100;
+  box-shadow: 0 6px 18px rgba(20, 43, 36, 0.28);
+}
+
+.floating-download:hover {
+  box-shadow: 0 6px 18px rgba(63, 107, 82, 0.35);
+}
+
+@media (max-width: 560px) {
+  .floating-download {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 14px;
+    font-size: 0.72rem;
   }
 }
